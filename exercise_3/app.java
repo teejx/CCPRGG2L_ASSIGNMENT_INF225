@@ -54,7 +54,7 @@ public class App {
         CommonSword.tellDamage();
         CommonSword.tellRarity();
         CommonSword.addDamage(5);
-        System.out.println(BrokenSword.showNameandRarity());
+        System.out.println(CommonSword.showNameandRarity());
 
         weapon UncommonSword = new weapon();
 
@@ -65,7 +65,7 @@ public class App {
         UncommonSword.tellDamage();
         UncommonSword.tellRarity();
         CommonSword.addDamage(5);
-        System.out.println(BrokenSword.showNameandRarity());
+        System.out.println(UncommonSword.showNameandRarity());
 
         weapon RareSword = new weapon();
 
@@ -76,7 +76,7 @@ public class App {
         RareSword.tellDamage();
         RareSword.tellRarity();
         CommonSword.addDamage(5);
-        System.out.println(BrokenSword.showNameandRarity());
+        System.out.println(RareSword.showNameandRarity());
 
         weapon EpicSword = new weapon();
 
@@ -87,7 +87,7 @@ public class App {
         EpicSword.tellDamage();
         EpicSword.tellRarity();
         CommonSword.addDamage(5);
-        System.out.println(BrokenSword.showNameandRarity());
+        System.out.println(EpicSword.showNameandRarity());
 
         weapon LegendarySword = new weapon();
 
@@ -98,7 +98,7 @@ public class App {
         LegendarySword.tellDamage();
         LegendarySword.tellRarity();
         CommonSword.addDamage(5);
-        System.out.println(BrokenSword.showNameandRarity());
+        System.out.println(LegendarySword.showNameandRarity());
 
 
     }
