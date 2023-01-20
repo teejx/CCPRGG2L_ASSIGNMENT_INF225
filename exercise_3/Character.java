@@ -3,7 +3,6 @@ public class Character {
     int agility;
     int intelligence;
     String name;
-    String youngG;
 
     public void sayMyName() {
         System.out.println("Hello I am " + name);
