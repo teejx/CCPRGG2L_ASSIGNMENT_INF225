@@ -21,10 +21,15 @@ public class GamePanel extends JPanel implements ActionListener {
     Timer timer;
     Random random;
 
+    // Game backgroundcolor
+    static Color gameBGColor;
+
+
+
     GamePanel() {
         random = new Random();
         this.setPreferredSize(new Dimension(SCREEN_WIDTH, SCREEN_HEIGHT));
-        this.setBackground(Color.black);
+        this.setBackground(gameBGColor);
         this.setFocusable(true);
         this.addKeyListener(new MyKeyAdapter());
         startGame();
@@ -145,7 +150,16 @@ public class GamePanel extends JPanel implements ActionListener {
         g.setFont(new Font("Ink Free", Font.BOLD, 75));
         FontMetrics metrics2 = getFontMetrics(g.getFont());
         g.drawString("Game Over", (SCREEN_WIDTH - metrics2.stringWidth("Game Over")) / 2, SCREEN_HEIGHT / 2);
+        
+        // Closes GameFrame
+        JFrame parentFrame = (JFrame) this.getTopLevelAncestor();
+        parentFrame.dispose();
+        // Goes to TryAgain Frame
+        new TryAgain();
+
+
     }
+
 
     @Override
     public void actionPerformed(ActionEvent e) {

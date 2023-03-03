@@ -52,7 +52,7 @@ public class MainMenu extends JFrame{
 
         public void actionPerformed(ActionEvent event){
             // goes to game frame
-            new GameFrame();
+            new ColorMenu();
 
             // Closes frame
             dispose();
